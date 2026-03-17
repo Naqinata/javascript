@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript gyak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>JavaScript Gyakorlás</h1>
+    <p>Ez egy javascript gyakorlat lesz.</p>
+    <hr />
+    <div class="menuStilus" id="menuId">
+        <a href="http://www.metropolitan.hu" target=blank>metu</a>
+        <a href="http://www.mome.hu" target=blank>mome</a>
+        <a href="http://www.kre.hu" target=blank>kre</a>
+        <a href="http://www.bge.hu" target=blank>bge</a>
+    </div>
+
+    <div id="gombok">
+        <hr />
+        <button id="helloGomb">Hello</button>
+    </div>
+    <script>
+        // console.log('hello Áron');
+        // alert('Jajj');
+        // confirm('Jóváhagyod?')
+        var helloGombFuggveny = function () {
+            //console.log('ok');
+            alert('ok');
+        }
+        var gombForras = document.getElementById("helloGomb");
+        gombForras.onclick = helloGombFuggveny;
+        console.log('ezt találtam', gombForras);
+    </script>
+
+</body>
+
+</html>
